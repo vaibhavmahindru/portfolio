@@ -1,7 +1,29 @@
 import React from "react";
+import Intro from "./components/intro";
+import Header from "./components/header";
+import About from "./components/about";
+import Footer from "./components/footer";
+import Portfolio from "./components/portfolio";
+import Contact from "./components/contact";
+import "./css/app.css";
 
-function App() {
-  return <h1>Welcome</h1>;
+class App extends React.Component {
+  render() {
+    return (
+      <div className="main">
+        <div className="header">
+          <Header />
+          <Intro />
+        </div>
+        <About />
+        <Portfolio />
+        <div className="contact">
+          <Contact />
+        </div>
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;
