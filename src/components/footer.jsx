@@ -5,15 +5,17 @@ class footer extends Component {
   render() {
     return (
       <React.Fragment>
-        Made with{" "}
-        <span role="img" aria-label="heart">
-          {" "}
-          ❤️
-        </span>{" "}
-        AND{" "}
-        <span role="img" aria-label="beer">
-          🍺
-        </span>
+        <div className="footer">
+          Made with{" "}
+          <span role="img" aria-label="heart">
+            {" "}
+            ❤️
+          </span>{" "}
+          AND{" "}
+          <span role="img" aria-label="beer">
+            🍺
+          </span>
+        </div>
       </React.Fragment>
     );
   }

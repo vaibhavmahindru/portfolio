@@ -5,16 +5,17 @@ import About from "./components/about";
 import Footer from "./components/footer";
 import Portfolio from "./components/portfolio";
 import Contact from "./components/contact";
-import "./css/app.css";
+import "./app.css";
 
 class App extends React.Component {
   render() {
     return (
       <div className="main">
-        <div className="header">
+        <section className="header">
           <Header />
           <Intro />
-        </div>
+        </section>
+
         <About />
         <Portfolio />
         <div className="contact">

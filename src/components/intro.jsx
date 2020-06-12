@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+
 class intro extends Component {
   render() {
     return (

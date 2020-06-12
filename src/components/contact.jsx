@@ -12,10 +12,11 @@ class contact extends Component {
             </a>
             <br />
             <strong>OR </strong>
+            <br />
             just simply fill the form beow and I will get back to you as soon as
             possible!
           </h4>
-          <form>
+          <form className="final">
             <div className="wrap">
               <b>
                 <span className="label">Your Name</span>
