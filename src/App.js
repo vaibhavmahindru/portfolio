@@ -15,10 +15,13 @@ class App extends React.Component {
           <Header />
           <Intro />
         </section>
-
-        <About />
-        <Portfolio />
-        <div className="contact">
+        <section className="about" id="ab">
+          <About />
+        </section>
+        <section className="portfolio" id="port">
+          <Portfolio />
+        </section>
+        <div className="contact" id="cont">
           <Contact />
         </div>
         <Footer />

@@ -11,7 +11,7 @@ h1 {
   font-size: 60px;
 }
 .header {
-  background-color: navy;
+  background-color: #a28089;
   color: #fff;
 }
 .image {
@@ -39,6 +39,7 @@ h1 {
   border: 2px solid black;
   margin: 0.5cm;
   border-radius: 30px;
+  text-decoration: none;
 }
 
 .option {
@@ -84,9 +85,13 @@ h1 {
 .about-div {
   text-align: left;
   margin-left: 120px;
+  padding: 10px;
 }
 .about {
   background-color: #6affa4;
+  position: relative;
+  margin-top: -50px;
+  margin-bottom: -10px;
 }
 
 .skills {
@@ -113,6 +118,8 @@ h1 {
 
 .portfolio {
   background-color: #0e76a8;
+  padding: 2rem;
+  color: #333;
 }
 
 .blocks {
@@ -182,6 +189,9 @@ h1 {
 
 .contact {
   background-color: #6affa4;
+  text-align: center;
+  margin-top: -20px;
+  padding: 2em;
 }
 
 .msg-btn {
@@ -193,14 +203,73 @@ h1 {
 }
 .final {
   display: inline-block;
+  border: #000 solid;
   margin: 20px;
+  border-radius: 10%;
   padding: 5px 10px;
   font-weight: 600;
   font-size: 1.3rem;
   box-sizing: border-box;
   position: relative;
 }
+.wrap {
+  padding: 10px;
+}
 .msg-btn:hover {
   color: #fff;
   background-color: #000;
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  color: #333;
+  line-height: 1;
+  padding: 0 2px;
+}
+
+.focus-input {
+  position: absolute;
+  display: inline;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input::before {
+  content: "";
+  display: inline;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.4s;
+  background: #7f7f7f;
+}
+
+input.input {
+  height: 20px;
+}
+
+textarea.input {
+  min-height: 50px;
+  padding-top: 9px;
+}
+
+.input:focus + .focus-input::before {
+  width: 100%;
+}
+
+.has-val.input + .focus-input::before {
+  width: 100%;
 }

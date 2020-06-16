@@ -5,13 +5,13 @@ class Header extends Component {
     return (
       <React.Fragment>
         <div className="navbar">
-          <a href="#about" className="option">
+          <a href="#ab" className="option">
             About
           </a>
-          <a href="#portfolio" className="option">
+          <a href="#port" className="option">
             Portfolio
           </a>
-          <a href="#contact" className="option">
+          <a href="#cont" className="option">
             Contact
           </a>
         </div>
